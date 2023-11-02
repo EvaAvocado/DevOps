@@ -1,0 +1,17 @@
+# !1 Tag latest
+FROM ubuntu:latest
+
+# Install ssh server
+RUN apt update && apt install openssh-server sudo -y
+# !2 Cleaning caches in separete layer
+RUN apt clean
+
+# !3 Running multiple RUN commands except of single one
+# Create user
+RUN useradd -rm -d /home/ubuntu -s /bin/bash -g root -G sudo -u 1000 test
+RUN echo 'test:test' | chpasswd
+
+# Run ssh server
+RUN service ssh start
+EXPOSE 22
+CMD ["/usr/sbin/sshd","-D"]
