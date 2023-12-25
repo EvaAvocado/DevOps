@@ -11,7 +11,7 @@
 DevOps лабораторные:
 - [Лабораторная работа №1 (со звездочкой)](DevOps/Lab_1/Readme.md)
 - [Лабораторная работа №2](DevOps/Lab_2/Readme.md)
-- [Лабораторная работа №3](DevOps/Lab_3/README.md) - tbd
+- [Лабораторная работа №3](DevOps/Lab_3/README.md)
 
 Аналитические лабораторные:
 - [Лабораторная работа №1 (AWS)](Analytical/Lab_1/README.md)
